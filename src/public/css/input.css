@@ -6,7 +6,12 @@ body{
     background-color:rgb(58, 58, 58);
   }
   
-  
+.shareButton {
+    width:50%;
+    color:white;
+    margin:auto;
+  }
+
   #title-text {
       font-size: 3em;
       font-family: 'Courier New', Courier, monospace;
