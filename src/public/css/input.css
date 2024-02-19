@@ -7,10 +7,15 @@ body{
   }
   
 .shareButton {
-    width:50%;
-    color:white;
-    margin:auto;
-  }
+    
+    margin-top:100%;
+    padding-right:5px;
+    width:75%;
+}
+
+.shareButton :hover{
+  width:80%;
+}
 
   #title-text {
       font-size: 3em;

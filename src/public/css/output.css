@@ -544,10 +544,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
 .m-2 {
   margin: 0.5rem;
 }
@@ -576,8 +572,8 @@ video {
   max-width: 32rem;
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.grid-cols-\[90\%_10\%\] {
+  grid-template-columns: 90% 10%;
 }
 
 .flex-wrap {
@@ -637,9 +633,13 @@ body{
 }
 
 .shareButton {
-  width:50%;
-  color:white;
-  margin:auto;
+  margin-top:100%;
+  padding-right:5px;
+  width:75%;
+}
+
+.shareButton :hover{
+  width:80%;
 }
 
 #title-text {
