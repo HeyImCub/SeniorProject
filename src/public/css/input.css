@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body{
     background-color:rgb(58, 58, 58);
   }
@@ -11,10 +12,6 @@ body{
     margin-top:100%;
     padding-right:5px;
     width:75%;
-}
-
-.shareButton :hover{
-  width:80%;
 }
 
   #title-text {
