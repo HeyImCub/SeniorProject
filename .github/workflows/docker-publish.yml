@@ -13,10 +13,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Build and run Docker Compose
+  deploy: 
+    environment:
+     name: github-pages
+     url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
 
-    - name: Build and run Docker Compose
-      run: |
-        docker-compose up -d
-        docker-compose ps
+    steps:
+      - name: Docker Compose
+        uses: hoverkraft-tech/compose-action@v0.0.0
+      - name: Deploy to Github Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
