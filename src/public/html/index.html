@@ -7,6 +7,7 @@
     <title>Senior Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="/public/css/output.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
 <body>
   <script src="/public/js/index.js"></script>
@@ -22,9 +23,9 @@
 <div class="m-20 sm:gap-6 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
   
   <section id="card1">
-    <div class="max-w-lg rounded overflow-hidden shadow-lg">
+    <div class="border-2 bg-black-900 max-w-lg rounded overflow-hidden shadow-lg">
         <img class="w-full" src="/public/images/scamNotification.png" alt="Sunset in the mountains">
-        <div class="pl-2 grid grid-cols-[90%_10%]">
+        <div class="pl-2 grid grid-cols-[90%_10%] border-2">
             <div class="m-3 text-white">
               <p class="font-bold text-xl mb-2">Notificaion Spam/Scams</p>
               <p class="text-base">
@@ -38,45 +39,90 @@
                 <li>Google Chrome: <p class="text-blue-500">chrome://settings/content/notifications</p></li>
                 <li>Mozilla Firefox: <p class="text-blue-500">:preferences#privacy</p></li>
                 <li>Microsoft Edge: <p class="text-blue-500">edge://settings/content/notifications</p></li>
-              </div>
-          <div class="shareButton">
-            <img src="/public/images/shareIcon.png">
+            </div>
+          <div class="shareButton" onclick="shareButtonCopy(this)">
+            <a href="#card1"><img src="/public/images/shareIcon.png"></a>
           </div>
         </div>
     </div>
   </section>
   <section id="card2">
-    <div class="max-w-lg rounded overflow-hidden shadow-lg">
-      <img class="w-full" src="/public/images/scamNotification.png" alt="Sunset in the mountains">
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2 text-white">The Coldest Sunset</div>
-        <p class="text-white text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-        </p>
+    <div class="border-2 bg-black-900 max-w-lg rounded overflow-hidden shadow-lg">
+      <img class="w-full" src="/public/images/googleLogin.png" alt="Sunset in the mountains">
+      <div class="pl-2 grid grid-cols-[90%_10%] border-2">
+          <div class="m-3 text-white">
+            <p class="font-bold text-xl mb-2">Fake Login Websites</p>
+            <p class="text-base">
+              These websites attempt to trick you into giving over your personal information. 
+              They are usually used by scam websites to steal your personal information. 
+              Once the login is done it usually will send you to an error page or just the main page of the actually login website.
+            </p>
+            <p class="text-xl mt-2 font-bold text-red-600">
+              How To Avoid:
+            </p>
+            <p class="text-base">It's best to avoid these websites. To test the login, you can put in fake information 
+              and it will act as if you put your actuall information
+              in it because the scam website doesn't know your actuall information. 
+            </p>
+            <br>
+            <p>
+              <em>Using Multi-Factor Authentication is also a great way to prevent people from logging into your accounts.</em>
+            </p>
+            
+            </div>
+        <div id='card2' onclick="shareButtonCopy(this)" class="shareButton">
+          <a href="#card2"><img src="/public/images/shareIcon.png"></a>
+        </div>
       </div>
-    </div>
+  </div>
   </section>
   <section id="card3">
-    <div class="max-w-lg rounded overflow-hidden shadow-lg">
+    <div class="border-2 bg-black-900 max-w-lg rounded overflow-hidden shadow-lg">
       <img class="w-full" src="/public/images/scamNotification.png" alt="Sunset in the mountains">
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2 text-white">The Coldest Sunset</div>
-        <p class="text-white text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-        </p>
+      <div class="pl-2 grid grid-cols-[90%_10%] border-2">
+          <div class="m-3 text-white">
+            <p class="font-bold text-xl mb-2">Notificaion Spam/Scams</p>
+            <p class="text-base">
+              These notifcations are usually trying to convince you to think they are notifications from the computer. Yet these are usually just notifications from a malicious website.
+            </p>
+            <p class="text-xl mt-2 font-bold text-red-600">
+              How To Remove:
+            </p>
+            <p class="text-base">Can usually be removed from Browser notification settings or Computer notification settings</p>
+            <ul class="mt-4 list-disc text-lg font-bold">Links to Broswer Notification Settings <span class="text-base">(Enter these links into the address bar)</span></ul>
+              <li>Google Chrome: <p class="text-blue-500">chrome://settings/content/notifications</p></li>
+              <li>Mozilla Firefox: <p class="text-blue-500">:preferences#privacy</p></li>
+              <li>Microsoft Edge: <p class="text-blue-500">edge://settings/content/notifications</p></li>
+            </div>
+        <div id='card3' onclick="shareButtonCopy(this)" class="shareButton">
+          <a href="#card3"><img src="/public/images/shareIcon.png"></a>
+        </div>
       </div>
-    </div>
+  </div>
   </section>
   <section id="card4">
-    <div id="card4" class="max-w-lg rounded overflow-hidden shadow-lg">
+    <div class="border-2 bg-black-900 max-w-lg rounded overflow-hidden shadow-lg">
       <img class="w-full" src="/public/images/scamNotification.png" alt="Sunset in the mountains">
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2 text-white">The Coldest Sunset</div>
-        <p class="text-white text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-        </p>
+      <div class="pl-2 grid grid-cols-[90%_10%] border-2">
+          <div class="m-3 text-white">
+            <p class="font-bold text-xl mb-2">Notificaion Spam/Scams</p>
+            <p class="text-base">
+              These notifcations are usually trying to convince you to think they are notifications from the computer. Yet these are usually just notifications from a malicious website.
+            </p>
+            <p class="text-xl mt-2 font-bold text-red-600">
+              How To Remove:
+            </p>
+            <p class="text-base">Can usually be removed from Browser notification settings or Computer notification settings</p>
+            <ul class="mt-4 list-disc text-lg font-bold">Links to Broswer Notification Settings <span class="text-base">(Enter these links into the address bar)</span></ul>
+              <li>Google Chrome: <p class="text-blue-500">chrome://settings/content/notifications</p></li>
+              <li>Mozilla Firefox: <p class="text-blue-500">:preferences#privacy</p></li>
+              <li>Microsoft Edge: <p class="text-blue-500">edge://settings/content/notifications</p></li>
+            </div>
+        <div id='card4' onclick="shareButtonCopy(this)" class="shareButton">
+          <a href="#card4"><img src="/public/images/shareIcon.png"></a>
+        </div>
       </div>
-    </div>
+  </div>
   </section>
 </div>
       <!--

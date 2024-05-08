@@ -604,19 +604,13 @@ video {
   border-radius: 0.25rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.border-2 {
+  border-width: 2px;
 }
 
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .pl-2 {
@@ -671,6 +665,12 @@ body{
   margin-top:100%;
   padding-right:5px;
   width:75%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.shareButton :hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
 
 #title-text {
@@ -702,9 +702,9 @@ body{
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
   box-sizing: border-box;
-  color: #FFFFFF;
   display: flex;
   font-family: Phantomsans, sans-serif;
+  color:white;
   justify-content: center;
   line-height: 1em;
   min-width: 140px;
