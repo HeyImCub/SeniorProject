@@ -30,5 +30,5 @@ func main() {
 	e.Renderer = t
 	e.Static("/public", "public")
 	e.GET("/", routes.Index).Name = "Index"
-	e.Logger.Fatal(e.Start(":8080"))
+	e.Logger.Fatal(e.Start(":80"))
 }
