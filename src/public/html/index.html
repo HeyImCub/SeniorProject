@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senior Project</title>
+    <title>Internet Scams</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="/public/css/output.css" rel="stylesheet">
+    <link href="/public/css/styles.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
 <body>
@@ -40,7 +41,7 @@
                 <li>Mozilla Firefox: <p class="text-blue-500">:preferences#privacy</p></li>
                 <li>Microsoft Edge: <p class="text-blue-500">edge://settings/content/notifications</p></li>
             </div>
-          <div class="shareButton" onclick="shareButtonCopy(this)">
+          <div id="card1" class="shareButton" onclick="shareButtonCopy(this)">
             <a href="#card1"><img src="/public/images/shareIcon.png"></a>
           </div>
         </div>
@@ -78,21 +79,32 @@
   </section>
   <section id="card3">
     <div class="border-2 bg-black-900 max-w-lg rounded overflow-hidden shadow-lg">
-      <img class="w-full" src="/public/images/scamNotification.png" alt="Sunset in the mountains">
+      <img class="w-full" src="/public/images/simswap.jpg" alt="Sunset in the mountains">
       <div class="pl-2 grid grid-cols-[90%_10%] border-2">
           <div class="m-3 text-white">
-            <p class="font-bold text-xl mb-2">Notificaion Spam/Scams</p>
+            <p class="font-bold text-xl mb-2">Sim Swapping</p>
             <p class="text-base">
-              These notifcations are usually trying to convince you to think they are notifications from the computer. Yet these are usually just notifications from a malicious website.
+              <em>Sim Swapping</em> is a type of scam where a fraudster convinces 
+              a phone carrier to transfer your phone number to a SIM card under 
+              their control. Once they have control of your phone number, they can intercept 
+              your calls, texts, and even access accounts linked to your phone number, 
+              potentially leading to identity theft or financial loss.
             </p>
-            <p class="text-xl mt-2 font-bold text-red-600">
-              How To Remove:
-            </p>
-            <p class="text-base">Can usually be removed from Browser notification settings or Computer notification settings</p>
-            <ul class="mt-4 list-disc text-lg font-bold">Links to Broswer Notification Settings <span class="text-base">(Enter these links into the address bar)</span></ul>
-              <li>Google Chrome: <p class="text-blue-500">chrome://settings/content/notifications</p></li>
-              <li>Mozilla Firefox: <p class="text-blue-500">:preferences#privacy</p></li>
-              <li>Microsoft Edge: <p class="text-blue-500">edge://settings/content/notifications</p></li>
+           
+            <ul class="mt-4 list-disc text-lg font-bold"><p class="text-xl mt-2 font-bold text-red-600">
+              How To Avoid:
+            </p></ul>
+              <li>
+                Use Strong Authentication
+                <p>Enable multi-Factor Authenication (MFA) and perferably use password manager apps such as <strong>KeyPass</strong></p>
+              </li>
+              <li>
+                Be Cautious of Suspicious Requests
+                <p>Unexpected calls, emails, or messages requesting personal information
+                  or account details could be used for a Sim Swapping attack.
+                </p>
+              </li>
+        
             </div>
         <div id='card3' onclick="shareButtonCopy(this)" class="shareButton">
           <a href="#card3"><img src="/public/images/shareIcon.png"></a>
@@ -102,21 +114,27 @@
   </section>
   <section id="card4">
     <div class="border-2 bg-black-900 max-w-lg rounded overflow-hidden shadow-lg">
-      <img class="w-full" src="/public/images/scamNotification.png" alt="Sunset in the mountains">
+      <img class="w-full" src="/public/images/techSupport.jpeg" alt="Sunset in the mountains">
       <div class="pl-2 grid grid-cols-[90%_10%] border-2">
           <div class="m-3 text-white">
-            <p class="font-bold text-xl mb-2">Notificaion Spam/Scams</p>
+            <p class="font-bold text-xl mb-2">Tech Support Scams</p>
             <p class="text-base">
-              These notifcations are usually trying to convince you to think they are notifications from the computer. Yet these are usually just notifications from a malicious website.
+              Scammers will create websites that look identical to legitimate ones, such
+              as banking or online shopping sites, to trick users into entering their login
+              credentials or payment information. Tech Support scam websites in particular
+              will have people on a call support service that will have you connect to them
+              with a desktop sharing software. Yet this let's them have access to your computer, 
+              so they could steal plenty of information. There are many people that mess with these 
+              types of scams, such as Jim Browning. 
             </p>
-            <p class="text-xl mt-2 font-bold text-red-600">
-              How To Remove:
-            </p>
-            <p class="text-base">Can usually be removed from Browser notification settings or Computer notification settings</p>
-            <ul class="mt-4 list-disc text-lg font-bold">Links to Broswer Notification Settings <span class="text-base">(Enter these links into the address bar)</span></ul>
-              <li>Google Chrome: <p class="text-blue-500">chrome://settings/content/notifications</p></li>
-              <li>Mozilla Firefox: <p class="text-blue-500">:preferences#privacy</p></li>
-              <li>Microsoft Edge: <p class="text-blue-500">edge://settings/content/notifications</p></li>
+            <ul class="mt-4 list-disc text-lg font-bold">
+              <p class="text-xl mt-2 font-bold text-red-600">
+                How To Avoid:
+              </p>
+            </ul>
+              <li>Make sure you are on the correct website by making sure the url is correct and has https:// instead of http://</li>
+              <li>Be skeptical of any pop-ups. It's best to avoid these and use an ad-blocker such as ublock origin.</li>
+              <li>Tech Support will not need payments in gift cards.</li>
             </div>
         <div id='card4' onclick="shareButtonCopy(this)" class="shareButton">
           <a href="#card4"><img src="/public/images/shareIcon.png"></a>
@@ -125,14 +143,9 @@
   </div>
   </section>
 </div>
-      <!--
-        Types of internet scams:
-
-        Fake Website
-        Fake Notifications
-        Ont Time Passwords/ Sim Swapping
-        Fake Emails
-
-      -->
+<p class="endText">
+  <strong>Overall</strong>, these are just a few examples of the many different types of scams that exist
+  on the internet. Stay Safe and Always Be Skeptical.
+</p>
 </body>
 </html>

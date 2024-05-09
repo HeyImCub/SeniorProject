@@ -8,4 +8,4 @@ RUN go mod download
 
 ENTRYPOINT ["go", "run", "main.go"]
 
-EXPOSE $PORT
+EXPOSE 8080

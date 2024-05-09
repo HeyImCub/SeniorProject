@@ -1,6 +1,6 @@
 function shareButtonCopy(button){
     // Copy link to clipboard
-    let link = 'http://127.0.0.1:8080/#' + button.id
+    let link = "http://" + window.location.host +"/#" +button.id
     console.log(link)
     navigator.clipboard.writeText(link)
         .then(function() {
